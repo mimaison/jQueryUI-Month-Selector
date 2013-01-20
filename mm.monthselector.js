@@ -7,7 +7,7 @@
  */
 (function($) {
 "use strict";
-$.widget("ui.monthselector", {
+$.widget("mm.monthselector", {
 	version: "1.0.0",
 
 	options: {
@@ -22,12 +22,14 @@ $.widget("ui.monthselector", {
 
 	_create: function() {
 		var self = this,
-				endYear = this.options.end.getFullYear();
-		for (var i = endYear; i >= this.options.start.getFullYear(); i--) {
+				endYear = this.options.end.getFullYear(),
+				startYear = this.options.start.getFullYear();
+		for (var i = endYear; i >= startYear; i--) {
 			var maxMonth = (i === endYear) ? this.options.end.getMonth() : this.options.names.length - 1;
+			var minMonth = (i === startYear) ? this.options.start.getMonth() : 0;
 			$("<h3>" + i + "</h3>").appendTo(this.element);
 			var div = $("<div>").appendTo(this.element);
-			for (var j = maxMonth; j >= 0; j--) {
+			for (var j = maxMonth; j >= minMonth; j--) {
 				var html = $("<p id='" + this.element.attr("id") + "_" + i + "_" + j + "'>" + this.options.names[j] + "</p>").appendTo(div);
 				html.mousedown(function() {
 					self._select(this);
