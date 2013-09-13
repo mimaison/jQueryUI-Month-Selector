@@ -1,0 +1,32 @@
+{
+	"name": "mm.monthselector",
+	"title": "jQuery Month selector",
+	"description": "jQueryUI Widget that enables to display and select Month using the mm.itemselector widget",
+	"keywords": [
+		"ui",
+		"selection",
+		"accordion",
+		"input",
+		"mm.itemselector",
+		"date",
+		"month"
+	],
+	"version": "1.0.0",
+	"author": {
+		"name": "Mickael Maison",
+		"url": "http://www.mickaelmaison.com"
+	},
+	"demo": "http://www.mickaelmaison.com/monthselector/",
+	"licenses": [
+		{
+			"type": "GPLv2",
+			"url": "http://opensource.org/licenses/GPL-2.0"
+		}
+	],
+	"dependencies": {
+		"jquery": ">=1.6",
+		"mm.itemselector": ">=1.0.1"
+	}
+}
+
+
