@@ -48,8 +48,8 @@ $.widget('mm.monthselector', {
 
 	_callback: function(element, item) {
 		var callback = element.monthselector('option', 'callback');
-		var names = element.monthselector('option', 'names');
 		if (callback !== null) {
+			var names = element.monthselector('option', 'names');
 			var end = element.monthselector('option', 'end');
 			var months = ((end.getFullYear() - parseInt(item[0])) === end.getFullYear()) ? end.getMonth() : 11;
 			var month = (item[1] > 6) ? months - item[1] : Math.abs(item[1] - months);
