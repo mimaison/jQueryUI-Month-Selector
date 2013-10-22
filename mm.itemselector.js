@@ -8,7 +8,7 @@
 (function($) {
 'use strict';
 $.widget('mm.itemselector', {
-	version: '1.0.0',
+	version: '1.0.3',
 
 	options: {
 		items: [],
@@ -78,6 +78,11 @@ $.widget('mm.itemselector', {
 		$(this.element).accordion({
 			active: index
 		});
+	},
+
+	_destroy: function() {
+		$(this.element).empty();
+		$(this.element).accordion('destroy');
 	}
 
 });

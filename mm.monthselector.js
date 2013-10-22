@@ -8,7 +8,7 @@
 (function($) {
 'use strict';
 $.widget('mm.monthselector', {
-	version: '1.0',
+	version: '1.0.1',
 
 	options: {
 		names: [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ],
@@ -64,6 +64,10 @@ $.widget('mm.monthselector', {
 				$(this.element).itemsel({selected: [ value.getFullYear(), value.getMonth() ] });
 			}
 		}
+	},
+
+	_destroy: function() {
+		$(this.element).itemselector('destroy');
 	}
 
 });

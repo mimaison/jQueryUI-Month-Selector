@@ -1,7 +1,7 @@
 {
 	"name": "mm.monthselector",
 	"title": "jQuery Month selector",
-	"description": "jQueryUI Widget that enables to display and select Month using the mm.itemselector widget",
+	"description": "jQueryUI Widget that enables to display and select a month and year using the mm.itemselector widget",
 	"keywords": [
 		"ui",
 		"selection",
@@ -11,7 +11,7 @@
 		"date",
 		"month"
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": {
 		"name": "Mickael Maison",
 		"url": "http://www.mickaelmaison.com"
@@ -25,7 +25,7 @@
 	],
 	"dependencies": {
 		"jquery": ">=1.6",
-		"mm.itemselector": ">=1.0.1"
+		"mm.itemselector": ">=1.0.3"
 	}
 }
 
