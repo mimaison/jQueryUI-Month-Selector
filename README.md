@@ -12,6 +12,5 @@ http://plugins.jquery.com/mm.monthselector/
 
 ## Version History ##
 
-**1.0.0**
-
-* initial release
+* [1.0.1](https://github.com/mimaison/jQueryUI-Month-Selector/releases/tag/1.0.1)
+* [1.0.0](https://github.com/mimaison/jQueryUI-Month-Selector/releases/tag/1.0.0)
